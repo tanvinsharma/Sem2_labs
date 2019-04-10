@@ -50,7 +50,7 @@ public:
 
 int main(){
 	//create at least two objects of MovieList
-	MovieList a; 
+	MovieList a;  //empty list is created.
 	cout << "Adding movies in a" << endl;
 	// MovieList *dynamic = new MovieList;
 	// a.add_Movie(2, "test5", 1990);
@@ -78,23 +78,23 @@ int main(){
 	// a.print();
 	// return 0;
 	cout << "Adding movies in c" << endl;
-	MovieList c;
+	MovieList c; //empty list is created 
 	c.add_Movie(2, "test", 1992);
 	c.add_Movie(5, "test100", 1993);
 	c.add_Movie(4, "test1000", 1995);
 	// c.print();
 
-	MovieList d;
-	MovieList e;
+	MovieList d; // empty list is created
+	MovieList e; //empty list is created 
 
 	cout << "--------------------" << endl;
-	// d = (a-c);
+	d = (a-c);
 
-	// d.print();
+	d.print();
 	cout << "--------------------" << endl;
 	cout << "====================" << endl;
-	e = (a+c);
-	e.print();
+	// e = (a+c);
+	// e.print();
 	cout << "====================" << endl;
 
 
@@ -342,7 +342,6 @@ MovieList :: ~MovieList(){
 		current = current -> get_next();
 	}
 	head = NULL ;
-	cout << "List is deleted " << endl;
 
 }
 
