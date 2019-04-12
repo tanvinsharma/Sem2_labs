@@ -44,7 +44,7 @@ public:
 	MovieList & operator = (const MovieList &x);
 	//addition to task 5
 	MovieList operator +(const MovieList &x) const ;
-	MovieList operator -(const MovieList &x) const;
+	// MovieList operator -(const MovieList &x) const;
 	friend MovieList operator -(const MovieList &x, const MovieList &y);
 };
 
@@ -85,17 +85,18 @@ int main(){
 	// c.print();
 
 	MovieList d; // empty list is created
-	MovieList e; //empty list is created 
+	MovieList e; //empty list is created
 
 	cout << "====================" << endl;
 	 e = (a+c);
 	 e.print();
 	cout << "====================" << endl;
-	// 	cout << "--------------------" << endl;
-	// d = (e-c);
 
-	// d.print();
-	// cout << "--------------------" << endl;
+	cout << "--------------------" << endl;
+	d = (a-c);
+
+	d.print();
+	cout << "--------------------" << endl;
 
 	return 0;
 }

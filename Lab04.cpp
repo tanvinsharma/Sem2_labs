@@ -273,7 +273,6 @@ int main(){
 	//create at least two objects of MovieList
 	MovieList a; 
 	cout << "Adding movies" << endl;
-	// MovieList *dynamic = new MovieList;
 	a.add_Movie(1, "test", 1992);
 	a.add_Movie(3, "test2", 1993);
 	a.add_Movie(6, "test3", 1995);
