@@ -97,6 +97,10 @@ int main(){
 
 	d.print();
 	cout << "--------------------" << endl;
+	cout << "====================" << endl;
+	MovieList f;
+	f = (a-a);
+	cout << "====================" << endl;
 
 	return 0;
 }
@@ -212,7 +216,7 @@ MovieList & MovieList::operator=(const MovieList &x) {
 		return *this;
 	}
 	else {
-		cout <<"error"<<endl;
+		
 		return *this;
 	}
 }
@@ -328,7 +332,7 @@ void Movie :: set_next(Movie *next){
 MovieList :: MovieList(){
 
 	head = NULL; 
-	cout << "Empty List is created " << endl;
+	// cout << "Empty List is created " << endl;
 
 }
 

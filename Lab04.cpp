@@ -54,7 +54,6 @@ MovieList &MovieList::operator=(const MovieList &x) {
 		return *this;
 	}
 	else {
-		cout <<"error"<<endl;
 		return *this;
 	}
 }
