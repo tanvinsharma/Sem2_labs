@@ -55,7 +55,7 @@ int main(){
 	// MovieList *dynamic = new MovieList;
 	// a.add_Movie(2, "test5", 1990);
 	a.add_Movie(1, "test", 1992);
-	a.add_Movie(2, "test5", 1990);
+	a.add_Movie(3, "test5", 1990);
 	a.add_Movie(6, "test3", 1995);
 	// a.add_Movie(2, "test5", 1990);
 	// a.print();
@@ -87,16 +87,15 @@ int main(){
 	MovieList d; // empty list is created
 	MovieList e; //empty list is created 
 
-	cout << "--------------------" << endl;
-	d = (a-c);
-
-	d.print();
-	cout << "--------------------" << endl;
 	cout << "====================" << endl;
-	// e = (a+c);
-	// e.print();
+	 e = (a+c);
+	 e.print();
 	cout << "====================" << endl;
+	// 	cout << "--------------------" << endl;
+	// d = (e-c);
 
+	// d.print();
+	// cout << "--------------------" << endl;
 
 	return 0;
 }
@@ -186,8 +185,10 @@ MovieList MovieList::operator+(const MovieList &list) const {
 		result.add_Movie(temp->get_id(), temp->get_title(), temp->get_year());
 		// temp->print();
 		temp = temp->get_next();
-	}
-	result.print();
+	}	//result.print();
+
+//result.print();	
+
 	delete temp;
 	Movie *temp2 = list.head;
 	while(temp2 != NULL)
@@ -197,7 +198,6 @@ MovieList MovieList::operator+(const MovieList &list) const {
 		temp2 = temp2->get_next();
 	}
 	delete temp2;
-	result.print();
 	return result;
 }
 
