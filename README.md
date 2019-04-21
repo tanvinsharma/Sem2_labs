@@ -1,4 +1,4 @@
-#CODES FOR LABS IN SEM 2 WRITTEN IN C++
+# CODES FOR LABS IN SEM 2 WRITTEN IN C++
 
 This repository includes codes written in C++ for the purpose of EOOP Labs
 
